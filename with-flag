@@ -1,0 +1,112 @@
+
+Testing example.com/frontend/typescript-socks:1.0.0...
+
+Organization:      example.com-dev-team
+Package manager:   deb
+Target file:       app.Dockerfile
+Project name:      docker-image|example.com/frontend/typescript-socks
+Docker image:      example.com/frontend/typescript-socks:1.0.0
+Platform:          linux/arm64
+Base image:        example.com/goldenimages/nodejs:0.0.1
+Licenses:          enabled
+
+✔ Tested 124 dependencies for known issues, no vulnerable paths found.
+
+Base Image                             Vulnerabilities  Severity
+example.com/goldenimages/nodejs:0.0.1  56               0 critical, 4 high, 34 medium, 18 low
+
+Recommendations for custom base image upgrade:
+
+Minor upgrades
+Base Image                             Vulnerabilities  Severity
+example.com/goldenimages/nodejs:0.0.3  31               0 critical, 3 high, 14 medium, 14 low
+example.com/goldenimages/nodejs:0.0.2  51               0 critical, 3 high, 30 medium, 18 low
+
+
+-------------------------------------------------------
+
+Testing example.com/frontend/typescript-socks:1.0.0...
+
+Tested 1367 dependencies for known issues, found 18 issues.
+
+
+Issues to fix by upgrading:
+
+  Upgrade gatsby@4.24.4 to gatsby@5.0.0 to fix
+  ✗ Open Redirect [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-GOT-2932019] in got@9.6.0
+    introduced by gatsby@4.24.4 > latest-version@5.1.0 > package-json@6.5.0 > got@9.6.0 and 2 other path(s)
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-ENGINEIO-3136336] in engine.io@4.1.2
+    introduced by gatsby@4.24.4 > socket.io@3.1.2 > engine.io@4.1.2
+
+
+Issues with no direct upgrade or patch:
+  ✗ Regular Expression Denial of Service (ReDoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-ANSIREGEX-1583908] in ansi-regex@2.1.1
+    introduced by gatsby@4.24.4 > gatsby-cli@4.24.0 > pretty-error@2.1.2 > renderkid@2.0.7 > strip-ansi@3.0.1 > ansi-regex@2.1.1 and 1 other path(s)
+  This issue was fixed in versions: 3.0.1, 4.1.1, 5.0.1, 6.0.1
+  ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-COOKIEJAR-3149984] in cookiejar@2.1.3
+    introduced by gatsby-source-datocms@4.0.4 > datocms-client@3.5.21 > wpapi@1.2.2 > superagent@4.1.0 > cookiejar@2.1.3
+  This issue was fixed in versions: 2.1.4
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-DECODEURICOMPONENT-3149970] in decode-uri-component@0.2.0
+    introduced by gatsby@4.24.4 > query-string@6.14.1 > decode-uri-component@0.2.0 and 2 other path(s)
+  This issue was fixed in versions: 0.2.2
+  ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-HTTPCACHESEMANTICS-3248783] in http-cache-semantics@4.1.0
+    introduced by gatsby@4.24.4 > got@11.8.5 > cacheable-request@7.0.2 > http-cache-semantics@4.1.0 and 20 other path(s)
+  This issue was fixed in versions: 4.1.1
+  ✗ Prototype Pollution [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-JSON5-3182856] in json5@1.0.1
+    introduced by gatsby@4.24.4 > @babel/core@7.19.6 > json5@2.2.1 and 734 other path(s)
+  This issue was fixed in versions: 1.0.2, 2.2.2
+  ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-LOADERUTILS-3042992] in loader-utils@1.2.3
+    introduced by gatsby@4.24.4 > @pmmmwh/react-refresh-webpack-plugin@0.5.8 > loader-utils@2.0.3 and 13 other path(s)
+  This issue was fixed in versions: 1.4.2, 2.0.4, 3.2.1
+  ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-LOADERUTILS-3105943] in loader-utils@1.2.3
+    introduced by gatsby@4.24.4 > @pmmmwh/react-refresh-webpack-plugin@0.5.8 > loader-utils@2.0.3 and 13 other path(s)
+  This issue was fixed in versions: 1.4.2, 2.0.4, 3.2.1
+  ✗ Prototype Pollution [High Severity][https://security.snyk.io/vuln/SNYK-JS-LOADERUTILS-3043105] in loader-utils@1.2.3
+    introduced by gatsby@4.24.4 > yaml-loader@0.6.0 > loader-utils@1.4.0 and 1 other path(s)
+  This issue was fixed in versions: 1.4.1, 2.0.3
+  ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-MINIMATCH-3050818] in minimatch@3.0.4
+    introduced by gatsby@4.24.4 > react-dev-utils@12.0.1 > recursive-readdir@2.2.2 > minimatch@3.0.4
+  This issue was fixed in versions: 3.0.5
+  ✗ Regular Expression Denial of Service (ReDoS) [High Severity][https://security.snyk.io/vuln/SNYK-JS-PARSELINKHEADER-1582783] in parse-link-header@1.0.1
+    introduced by gatsby-source-datocms@4.0.4 > datocms-client@3.5.21 > wpapi@1.2.2 > parse-link-header@1.0.1
+  This issue was fixed in versions: 2.0.0
+  ✗ Server-side Request Forgery (SSRF) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-REQUEST-3361831] in request@2.88.2
+    introduced by gatsby-source-datocms@4.0.4 > datocms-client@3.5.21 > request@2.88.2
+  No upgrade or patch available
+  ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-SIDEWAYFORMULA-3317169] in @sideway/formula@3.0.0
+    introduced by gatsby@4.24.4 > joi@17.6.4 > @sideway/formula@3.0.0 and 4 other path(s)
+  This issue was fixed in versions: 3.0.1
+  ✗ Regular Expression Denial of Service (ReDoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JS-UAPARSERJS-3244450] in ua-parser-js@0.7.32
+    introduced by gatsby@4.24.4 > @graphql-codegen/typescript@2.8.0 > @graphql-codegen/visitor-plugin-common@2.13.0 > @graphql-tools/relay-operation-optimizer@6.5.6 > @ardatan/relay-compiler@12.0.0 > fbjs@3.0.4 > ua-parser-js@0.7.32 and 5 other path(s)
+  This issue was fixed in versions: 0.7.33, 1.0.33
+  ✗ Sandbox Bypass [High Severity][https://security.snyk.io/vuln/SNYK-JS-WEBPACK-3358798] in webpack@5.74.0
+    introduced by gatsby@4.24.4 > webpack@5.74.0
+  This issue was fixed in versions: 5.76.0
+
+
+License issues:
+
+  ✗ MPL-2.0 license (new) [Medium Severity][https://snyk.io/vuln/snyk:lic:npm:axe-core:MPL-2.0] in axe-core@4.4.3
+    introduced by gatsby@4.24.4 > eslint-plugin-jsx-a11y@6.6.1 > axe-core@4.4.3
+
+  ✗ GPL-3.0 license (new) [High Severity][https://snyk.io/vuln/snyk:lic:npm:gatsbyjs:potrace:GPL-3.0] in @gatsbyjs/potrace@2.3.0
+    introduced by gatsby@4.24.4 > gatsby-plugin-utils@3.18.0 > @gatsbyjs/potrace@2.3.0 and 1 other path(s)
+
+
+
+Organization:      example.com-dev-team
+Package manager:   npm
+Target file:       /app/package.json
+Project name:      datocms-snipcart-gatsby-example
+Docker image:      example.com/frontend/typescript-socks:1.0.0
+Licenses:          enabled
+
+Snyk found some vulnerabilities in your image applications (Snyk searches for these vulnerabilities by default). See https://snyk.co/app-vulns for more information.
+
+To remove this message in the future, please run `snyk config set disableSuggestions=true`
+
+
+Tested 2 projects, 1 contained vulnerable paths.
+
+
+
