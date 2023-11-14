@@ -4,7 +4,7 @@ WORKDIR /app
 RUN git switch --detach b93fcf6
 RUN npm install --production && npm run-script build
 
-FROM example.com/goldenimages/nodejs:0.0.1
+FROM example.com/goldenimages/nodejs:0.0.2
 LABEL maintainer="Snyk Container Field Specialist"
 
 # copy package manifest files to allow Snyk to detect app vulns
